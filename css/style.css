@@ -1,0 +1,219 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#008080;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    z-index:1000;
+}
+
+.logo img{
+    height:65px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD700;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/shop1.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3.2rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#333;
+    text-decoration:none;
+    padding:14px 34px;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+    padding:90px 8%;
+}
+
+section h2{
+    text-align:center;
+    color:#008080;
+    margin-bottom:40px;
+    font-size:2.2rem;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px 20px;
+    border-radius:18px;
+    text-align:center;
+    font-size:2rem;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card h3{
+    margin-top:15px;
+    font-size:1.1rem;
+    color:#333;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+}
+
+/* About */
+
+#about{
+    background:white;
+}
+
+#about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* Contact */
+
+#contact{
+    background:#008080;
+    color:white;
+    text-align:center;
+}
+
+#contact h2{
+    color:#FFD700;
+}
+
+#contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#004f4f;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    margin:8px;
+    display:inline-block;
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+section{
+    padding:70px 20px;
+}
+
+}
